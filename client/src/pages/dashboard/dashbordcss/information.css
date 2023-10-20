@@ -1,0 +1,147 @@
+.information-pat{
+width: 100%;
+min-height: 1500px;
+max-height: 2000px;
+}
+.information-contient{
+/*
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  gap: 20px;
+background-color: #f6f6f6;
+width: 100%;
+margin-top: 10px;*/
+display: flex ;
+justify-content: space-between;
+background-color: #f6f6f6;
+width: 100%;
+margin-top: 10px;
+}
+.information-contient div{
+    background-color: wheat; /* #f6f6f6; */
+    width: 100%;
+    border-radius: 50px;
+  
+}
+.information-contient .info {
+    text-align: left;
+    width: 100%;
+    overflow-x: scroll;
+    margin-right: 5px;
+   
+}
+
+.information-contient .info .info-parg{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid blue;
+    padding: 10px 0px;
+    color: #333;
+}
+
+.information-contient .titre {
+    text-align: center;
+  padding: 20px 0px;  
+    width: 100%;
+    background-color: #333;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+}
+.information-contient .examen {
+    text-align: left;
+    width: 60%;
+    overflow-x: scroll;
+    margin-left: 4px;
+
+}
+.information-contient .examen .exam-parg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid blue;
+    margin-bottom: 10px;
+    padding: 25px 0px;
+    color: #333;
+
+}
+.information-contient span{
+    margin: 10px 10px 10px 15px;
+}
+
+.information-contient button{
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px ;
+    
+
+  }
+
+.information-contient .modifier{
+background-color: green;
+}
+.information-contient .ajouter{
+    background-color: blue;
+    }
+.information-contient .div-modifier{
+    display: flex ;
+    justify-content: flex-end;
+}
+.information-contient .attiribute,.information-contient .ent{
+    color: #333;
+    font-weight: bold;
+} 
+
+@media (max-width:1000px){
+    .information-contient{
+
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+        gap: 20px;
+      background-color: white;
+      width: 100%;
+      margin-top: 10px;
+      }
+      .information-contient .examen {
+        width: 100%;
+      }
+    
+      .information-contient .examen .exam-parg {
+        padding: 5px 0px;
+    }
+
+  }
+
+
+  @media (max-width:515px){
+    .information-contient{
+
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        gap: 20px;
+      background-color: white;
+      width: 100%;
+      margin-top: 10px;
+      }
+    
+  }
+    
+  @media (max-width:300px){
+    .information-contient{
+
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        gap: 10px;
+      background-color: white;
+      width: 100%;
+      margin-top: 10px;
+      }
+    
+  }

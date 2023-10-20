@@ -1,0 +1,128 @@
+.ajouterexamenphysique .popup {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  
+  .ajouterexamenphysique .popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    position: relative;
+    top: 30px;
+
+  }
+  
+  .ajouterexamenphysique .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+   top: 30px;
+   right: 0px;
+  width: 40px;
+  text-align: center;
+  }
+  
+  .ajouterexamenphysique .close:hover,
+  
+  .ajouterexamenphysique .payer-popup .payer-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    color:white;
+    background-color: red;
+  
+  
+  }
+  .ajouterexamenphysique {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  .ajouterexamenphysique label{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  .ajouterexamenphysique  textarea,
+  .ajouterexamenphysique  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .ajouterexamenphysique .btn-v{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+   margin-right: 40px;
+  }
+  .ajouterexamenphysique .btn-n{
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+
+ .ajouterexamenphysique .examenph { 
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  }
+  
+
+  .ajouterexamenphysique .div-button{
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (max-width: 900px){
+    .ajouterexamenphysique .popup-content {
+      width: 80%;
+    }
+    .ajouterexamenphysique  textarea,
+    .ajouterexamenphysique  input{
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+  }
+  @media (max-width: 500px){
+    .ajouterexamenphysique .popup-content {
+      width: 90%;
+    }
+    .ajouterexamenphysique .div-button{
+      display: block;
+    }
+    .ajouterexamenphysique .div-button button{
+      width: 100% !important;
+      padding: 3px;
+      margin:  4px  0px;
+    }
+  }

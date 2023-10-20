@@ -1,0 +1,203 @@
+
+
+/*.paramitre {
+    width: 100%;
+    text-align: center;
+}
+.paramitre  .element {
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid ; 
+    width: 100%;
+   
+}
+
+*/
+.paramitre {
+  width: 100%;
+  margin-top: -15px;
+  margin-left: -5px;
+
+}
+.paramitre  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 60px;
+    padding: 0 20px;
+    width: 100%;
+
+  }
+  
+  
+  .paramitre   .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .paramitre  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .paramitre  .navbar .aa {
+    color:  #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .dosserMedP {
+    display: none;
+        }
+  @media (min-width: 601px) {
+    .paramitre  .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+  }
+ 
+
+  .paramitre  .navbar-toggle {
+    display: none;
+  }
+
+
+  @media (max-width: 600px) {
+    .dosserMedP {
+display: block;
+    }
+    .paramitre   .navbar ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      padding: 10px 0;
+      display: none;
+
+      
+    }
+  
+    .paramitre   .navbar ul li {
+      margin: 0;
+    }
+  
+    .paramitre    .navbar ul li .aa {
+      font-size: 16px;
+      padding: 20px 30px;
+      display: block;
+      border-bottom: 1px solid #fff;
+   
+    }
+    .paramitre    .navbar ul li .aa:hover{
+      padding-left: 60px;
+      transition: 0.5s;
+    }
+    .paramitre    .navbar .activee ul {
+      display: flex;
+    }
+    .paramitre   .navbar-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+        color: white !important;
+      }
+    
+      .paramitre    .navbar-toggle span {
+        display: block;
+        width: 20px;
+        height: 6px;
+        margin-bottom: 4px;
+        background-color: #333;
+      }
+     
+      .paramitre    .navbar .activee {
+       
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          margin-top: 20px;
+          margin-left: 35%;
+          margin-right: 28px;
+          padding: 0;
+          background-color: rgb(198, 198, 233);
+          position: absolute;
+          top: 45px;
+          left: 0;
+          right: 0;
+          display: block; /* Masque la liste par défaut  rgb(198, 198, 233) */
+          color: white !important;
+    border-radius:10px 0px 10px 10px;
+ 
+   box-shadow: -32px 14px 168px 196px rgba(0,0,0,0.4);
+-webkit-box-shadow: -32px 0px 168px 40px rgba(0,0,0,0.4);
+-moz-box-shadow: -32px 14px 168px 196px rgba(0,0,0,0.4);
+z-index: 100 !important;
+        }
+        .paramitre    .navbar{
+          position: relative;
+        }
+        .paramitre    .navbar .activee::before{/* 9abla          */
+          content: ' ';
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          right: 0px;
+          top:  -20px;
+          border-style: solid;
+          border-width: 10px;
+          border-color:  transparent  transparent  rgb(198, 198, 233) transparent  ;
+              
+        }
+  }
+  
+ 
+  @media (max-width: 400px){
+    .paramitre    .navbar .activee {
+      margin-top: 25px;
+      margin-left: 0px;
+      margin-right: 3px;
+      padding: 0;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      right: 0;
+    
+     
+    }
+
+    .paramitre    .navbar ul li .aa {
+      font-size: 10px;
+      padding: 10px 20px;
+      display: block;
+      border-bottom: 1px solid #fff;
+   
+    }
+
+  } 
+  @media (max-width: 1000px){
+    .mobolpar{
+      display: none;
+    }
+  }
+/*
+  @media (min-width: 601px){
+  
+    .util{
+      display: none;
+    }
+  }
+  @media (max-width: 600px){
+    .util{
+      display: block;
+    }
+  }*/
+    
+  .util{
+    display: block;
+    margin-top: 80px;
+  }

@@ -1,0 +1,15 @@
+
+
+.depensesList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+  }
+  
+  .depenseItem {
+    display: flex;
+   background-color: red;
+  }
+  
+  

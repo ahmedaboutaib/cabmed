@@ -1,0 +1,84 @@
+.detailPaiement .pop-up {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  .detailPaiement  .pop-up-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    overflow-x: scroll;
+    position: relative;
+  }
+  
+  .detailPaiement .pclose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+top: 0px;
+right: 0px;
+  width: 40px;
+  text-align: center
+  }
+
+
+  .detailPaiement .pclose:hover,
+  .detailPaiement  .pclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  background-color: red;
+  }
+  .detailPaiement .scrl {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .detailPaiement .table {
+  width: 100%;
+  }
+  .detailPaiement table {
+      border-collapse: collapse;  
+      width: 100%; 
+    }
+    .detailPaiement
+    th {
+      padding: 8px;
+      text-align: center;
+      background-color: rgb(226 232 240) ;
+      border-spacing: 1px;
+    } 
+    .detailPaiement td {
+      padding: 8px;
+      text-align: left;
+    }
+    .detailPaiement tr:nth-child(even) {
+      background-color: #f2f2f2;
+    } 
+
+
+
+    .detailPaiement .button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.detailPaiement .button .imprimer{
+    background-color: #4CAF50;
+    margin-top: 10px;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre portée */
+    transition: box-shadow 0.3s ease-in-out; /* Ajout d'une transition fluide */
+}

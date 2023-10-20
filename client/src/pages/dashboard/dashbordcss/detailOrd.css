@@ -1,0 +1,226 @@
+.detailord .sup-popup {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  
+  .detailord  .sup-popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 78%;
+    overflow-x: scroll;
+    position: relative;
+    top: 30px;
+  }
+  
+  .detailord .sup-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+   top: 0px;
+   right: 0px;
+  width: 40px;
+  text-align: center
+  }
+
+
+  .detailord .sup-close:hover,
+  .detailord  .sup-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  background-color: red;
+
+  }
+  .detailord {
+    width: 100%;
+
+  }
+
+  .detailord .scrol{ overflow-x: scroll;
+    overflow-y: scroll;
+   width: 100%;
+  max-height: 450px;
+  }
+  .detailord .table {
+  width: 100%;
+  }
+  .detailord table {
+      border-collapse: collapse;  
+      width: 100%; 
+    }
+    .detailord
+    th {
+      padding: 8px;
+    
+      background-color: rgb(226 232 240) ;
+      border-spacing: 1px;
+    } 
+    .detailord td {
+      padding: 8px;
+      text-align: left !important;
+    }
+    .detailord tr:nth-child(even) {
+      background-color: #f2f2f2;
+    } 
+
+
+
+.detailord .button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.detailord .button button {
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+  transition: box-shadow 0.3s ease-in-out;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+.detailord .button .imprimer{
+    background-color: #4CAF50;
+}
+.detailord .supp{
+    font-size: 25px;
+    color:  red;
+}
+.detailord .button .aj{
+  background-color: blue;
+
+}
+.detailord .ajoutet{
+  background-color: blue;
+  padding: 3px 5px;
+  color: white;
+
+}
+.detailord .button .suppp {
+  background-color: red;
+}
+
+.detailord  .ajouter  {
+  max-width: 90%;
+  margin: 15px auto;  
+ min-height: 220px;
+}
+
+.detailord  .ajouter  label{
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.detailord  .ajouter   textarea,
+.detailord  .ajouter  input,
+.detailord  .ajouter  select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+/***/
+
+
+
+  .detailord  .supprimer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .detailord .supprimer  div{
+    margin-top: 30px;
+ font-size: 20px;
+  }
+  .detailord  .supprimer .oui{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre portée */
+    transition: box-shadow 0.3s ease-in-out; /* Ajout d'une transition fluide */
+  }
+  .detailord  .supprimer .non {
+    background-color: red;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre portée */
+    transition: box-shadow 0.3s ease-in-out; /* Ajout d'une transition fluide */
+  }
+
+  .detailord .supprimer  div:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Modification de l'ombre portée au survol */
+  }
+
+
+
+
+  @media (max-width: 850px){
+
+    
+  .detailord   .sup-popup-content{
+  width: 80%;
+    }
+  }
+  @media (max-width: 700px){
+    
+  .detailord   .sup-popup-content{
+      width: 90% !important;
+    }
+  
+    
+  .detailord    textarea,
+    
+  .detailord   input{
+      padding: 5px !important;
+      margin-bottom: 10px !important;
+    }
+
+
+    
+.detailord .button{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+  }
+  @media (max-width: 500px){
+    
+  .detailord   .sup-popup-content{
+      width: 95% !important;
+    }
+  
+    
+  .detailord    textarea,
+  .detailord   input,
+  
+  .detailord select{
+      padding: 3px !important;
+      margin-bottom: 6px !important;
+    }
+  }
+  

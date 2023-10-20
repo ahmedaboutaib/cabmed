@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.inscrirrr{
+    width: 100%;
+    background-image: url('https://img.freepik.com/free-vector/simple-geometric-pattern_1017-6212.jpg?w=740&t=st=1684245408~exp=1684246008~hmac=2e0fdae91191006e6f2b8ef536e87a4746d2a2162bac12b23e5451ce50ecd1de');
+   
+}
+.inscription {
+    margin: 0px auto ;
+
+  
+    height: calc(100vh );
+    max-height: 2000px;
+    min-height: 1400px;
+    border: #a2a3a2 solid 1px;
+    max-width: 700px;
+    border-radius: 20px;
+    background-color: white;
+  
+
+
+}/*rgb(196, 196, 241)*/
+.inscription section{
+    height: 100%;
+}
+
+.inscription .h1{
+ padding-top: 30px;
+    color: wheat;
+}
+
+@media only screen and (min-width: 768px) {
+    .inscription    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .inscription  label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .inscription  select,
+    .inscription   input[type="text"], input[type="email"], input[type="password"], textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    
+
+
+    .inscription .ins-button {
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      margin: 10px;
+    }
+    
+ 
+}
+/* Styles pour l'écran de mobile */
+@media only screen and (max-width: 767px) {
+    .inscription    form {
+        max-width: 80%;
+        margin: 0 auto;
+        
+    }
+    .inscription    label {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .inscription     input[type="text"], input[type="email"], input[type="password"], input[type="file"],textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    .inscription .ins-button {
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      margin: 10px;
+    }
+   
+   
+}
+
+
+
+
+
+
+.inscription .ins-button button{
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.inscription .ins-button .suivent:enabled{
+    background-color: rgb(1, 156, 184);
+}
+
+.inscription .ins-button .retourner{
+    background-color:  brown;
+}
+
+
+.inscription .ins-button .ins:enabled{
+    background-color: #45a049;
+    color: white;
+
+}
+
+
+.inscription .ins-button  button:disabled {
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+  }
+ 
+ .inscription .num {
+    display: flex ;
+    justify-content: center;
+ }
+
+.inscription .num span {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.inscription .errmsg{
+    color: white; 
+    background-color: red;
+    padding: 4px 10px;
+    width: fit-content;
+}
+
+
+.inscription .num .span1 {
+    background-color: #45a049;
+}
+.inscription .num .span2 {
+    background-color: #45a049;
+}
+.inscription .num .span{
+    background-color: #ccc;
+}
+
+.inscription .obligatoir{
+    color:  red;
+    font-size: 20px;
+}
+input{
+    background-color: rgb(238, 236, 236);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inscription section .valid {
+    display: block;
+    color: #45a049;
+    font-size: 16px;
+}
+.inscription section .offscreen {
+    display: none;
+}
+.inscription section .hide{
+    display: none;
+}
+.inscription section .invalid {
+    display: block;
+    color:  red;
+    font-size: 16px;
+}
+.inscription section .instructions{
+    display: block;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 4px;
+}
+.inscription section .instructions .info {
+    color: #4CAF50;
+    font-size: 16px;
+}
+.inscription section label {
+  display: flex; 
+  justify-content: flex-start;
+}
+
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }

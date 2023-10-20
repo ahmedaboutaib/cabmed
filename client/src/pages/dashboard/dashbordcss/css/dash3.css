@@ -1,0 +1,208 @@
+
+.secretaire 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  grey;
+  color: #fff;
+  height: 70px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  z-index: 102;
+  position: relative;
+}
+.secretaire  .poss{
+  width: 100%;
+  position: fixed;
+  z-index: 102;
+}
+
+.secretaire 
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.secretaire  .navbar .a {
+color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (min-width: 901px) {
+  .secretaire  .navbar ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width:  100%;
+      position: absolute; 
+      left: 170px;
+      top: 13px;
+    }
+    .secretaire .iconn{
+display: none;
+    }
+    .secretaire .logsecr{
+margin-bottom: 8px;
+  width:  160px;
+
+    }
+    .spansec .span11{
+      color:  white !important;
+      font-size: 35px;
+      }
+      .spansec .span22{
+          color:  wheat !important;
+          font-size: 35px;
+          }
+
+.secretaire  .navbar ul{
+  margin-top: 10px;
+
+}
+.secretaire .navCab{
+  display: flex;
+  justify-content: flex-start;
+}
+.secretaire .aaa {
+  position: absolute;
+  right: 190px;
+  bottom:  -8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.secretair .user-info{
+display:  block;
+  color: white !important;
+
+
+}
+.secretair .imgin{
+
+}
+.secretaire .iconn{
+  display: none;
+}
+}
+
+
+.secretaire  .navbar-toggle {
+  display: none;
+}
+
+
+
+@media (max-width: 900px) {
+  .secretaire   .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 10px 0;
+    display: none;
+
+  }
+  .secretaire .logsecr{
+    margin-bottom: 8px;
+      width:  160px;
+    
+        }
+        .spansec .span11{
+          color:  white !important;
+          font-size: 30px;
+          }
+          .spansec .span22{
+              color:  wheat !important;
+              font-size: 30px;
+              }
+  .secretaire  .navbar ul li {
+    margin: 0;
+  }
+
+  .secretaire   .navbar ul li .a {
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+
+  .secretaire  .navbar .activee ul {
+    display: flex;
+  }
+  .secretaire  .navbar-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+  
+    .secretaire  .navbar-toggle span {
+      display: block;
+      width: 20px;
+      height: 3px;
+      margin-bottom: 3px;
+      background-color:  white;
+    }
+    .secretaire    .navbar .activee {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: rosybrown;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: block; /* Masque la liste par défaut */
+
+        box-shadow: -32px 14px 168px 196px rgba(0,0,0,0.4);
+        -webkit-box-shadow: -32px 0px 168px 40px rgba(0,0,0,0.4);
+        -moz-box-shadow: -32px 14px 168px 196px rgba(0,0,0,0.4);
+      }
+      .secretaire  .navbar ul li .a:hover{
+        padding-left: 40px;
+        transition: 0.5;
+      }
+      .secretaire .aaa{
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+      .secretaire .user-info{
+        display: none !important; 
+
+      }
+}
+
+@media (min-width: 851px){
+  .conte {
+    padding: 20px;
+  }
+  
+} 
+
+@media (max-width: 850px) {
+  .conte {
+    padding: 10px;
+  }
+  
+}
+
+
+.secretaire .secretair{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  background-color:  wheat !important;
+}
+
+

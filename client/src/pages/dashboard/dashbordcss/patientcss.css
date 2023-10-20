@@ -1,0 +1,440 @@
+
+.patient {
+  width: 100%;
+  overflow-x: scroll;
+
+}
+.patient .table {
+  overflow-x: scroll;
+width: 100%;
+
+}
+.patient table {
+    border-collapse: collapse;  
+    width: 100%; 
+  }
+  .patient
+  th {
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(226 232 240) ;
+    border-spacing: 1px;
+  } 
+  .patient td {
+    padding: 8px;
+    text-align: left;
+  }
+  .patient tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } 
+ 
+
+  .patient .supp{
+    color: red;
+    font-size: 18px;
+  }
+  .patient .ajouterbt {
+    color: blue;
+    font-size: 18px;
+}
+.patient .ajouterSalle{
+  color: goldenrod;
+font-size: 18px;
+}
+.patient .modifier {
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+
+
+
+.patient .nouveau-rechercher{
+    /*display: flex;
+    justify-content: space-between;*/
+    width: 100%;
+}
+.patient .nouveau-rechercher .nouveau{
+  margin-left: 10px;
+  color: white;
+  padding: 2.5px 5px;
+  margin-bottom: 2px;
+  background-color: #4CAF50;
+  position: absolute;
+  right: 0px  !important;
+  top: 5px  ;
+
+}
+   .patient .nouveau-rechercher .rechercher input{
+  background-color: whitesmoke;
+  margin-left: 2px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+border: 2px solid #4CAF50;
+border-radius: 10px;
+
+}
+
+.patient .nouveau-rechercher .rechercher input:focus{
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px blue;
+}
+
+@media (max-width: 1099px){
+  .patient .nouveau-rechercher .rechercher input {
+    width: 170px;
+   
+  }
+
+}
+
+  
+@media (min-width: 1100px){
+  .patient .nouveau-rechercher .rechercher input {
+    width: 220px;
+  }
+
+}
+
+@media (max-width: 500px){
+  .patient  .nouveau-rechercher .rechercher input {
+  width: 120px ;
+}
+
+}
+
+  
+@media (max-width: 500px){
+  .patient  .nouveau-rechercher .rechercher input {
+  width: 140px ;
+}
+}
+
+
+
+/* star ajouter */
+.ajouter .popup {
+ 
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 100;
+}
+
+.ajouter .popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  position: relative;
+  top: 30px;
+
+}
+
+ .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+ top: 0px !important;
+ right: 0px;
+width: 40px;
+text-align: center
+
+}
+
+.close:hover,
+ .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+background-color: red;
+
+}
+.ajouter .ajouter-patient{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.ajouter .ajouter-patient label{
+  margin-left: 0px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+.ajouter .ajouter-patient input, .ajouter .ajouter-patient select {
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ajouter .ajouter-patient .submit:disabled{
+  background-color: gray;
+  color: rgb(97, 90, 90);
+  opacity: 0.7;
+
+}
+
+
+.ajouter .ajouter-patient .submit,.ajouter .ajouter-patient .annule {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+.ajouter .ajouter-patient .submit{
+background-color: #4CAF50;}
+.ajouter .ajouter-patient .annule{
+  background-color: red;
+}
+
+.ajouter .ajouter-patient  form {
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+gap: 20px;
+width: 100%;
+
+}
+
+.ajouter .ajouter-patient  form div {
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ajouter .ajouter-patient .obligatoir{
+color: red;
+font-size: 15px;
+}
+
+
+
+
+
+
+/*ajouter render vous*/
+
+
+.ajouterrendezvous .popup {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 100;
+}
+
+.ajouterrendezvous  .popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  position: relative;
+  top: 30px;
+  
+}
+.ajouterrendezvous .ajouter-patient{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+.ajouterrendezvous  .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+ top: 0px !important;
+ right: 0px;
+width: 40px;
+text-align: center
+}
+
+.ajouterrendezvous  .close:hover,
+.ajouterrendezvous  .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: red;
+
+}
+.ajouterrendezvous-p{
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+.ajouterrendezvous  label{
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+.ajouterrendezvous  textarea,
+.ajouterrendezvous input,
+.ajouterrendezvous select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ajouterrendezvous .btn-v:disabled{
+  background-color: gray;
+  color: rgb(97, 90, 90);
+  opacity: 0.7;
+
+}
+
+.ajouterrendezvous .obligatoir{
+  color: red !important;
+  font-size: 15px;
+  }
+  
+
+
+.ajouterrendezvous  button{
+
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.ajouterrendezvous .btn-v{
+  background-color: green;
+  margin-right: 5px;
+}
+.ajouterrendezvous .btn-a{
+  background-color: red;
+}
+
+.ajouterrendezvous .div-button{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+@media (max-width: 550px){
+
+.ajouterrendezvous .h3{
+  font-size: 15px;
+}
+}
+/*end rendez vous*/
+
+
+
+@media (max-width: 800px){
+  .ajouter .ajouter-patient  form  {
+display: block;
+  }
+  .ajouter .ajouter-patient .submit, 
+  .ajouter .ajouter-patient .annule{
+    padding: 4px 4px;
+  
+  }
+
+  
+  .ajouter .ajouter-patient input,   .ajouter .ajouter-patient select {
+    width: 100%;
+    padding: 6px 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .ajouterrendezvous  textarea,
+  .ajouterrendezvous input,
+  .ajouterrendezvous select {
+    width: 100%;
+    padding: 4px !important;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .ajouterrendezvous .popup-content{
+    width: 80%;
+  }
+
+}
+
+
+
+
+@media (max-width: 550px){
+  .ajouterrendezvous  .btn-a{
+        padding: 3px;
+        margin-top: 5px;
+       width: 100%; 
+  }
+  .ajouterrendezvous  .btn-v{
+    padding: 3px;
+   width: 100%; 
+}
+.ajouterrendezvous .div-button{
+  display: block;
+}
+.ajouterrendezvous .h3{
+  font-size: 20px;
+}
+
+.ajouterrendezvous .popup-content{
+  width: 90%;
+}
+.ajouter .popup-content{
+  width:  90%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

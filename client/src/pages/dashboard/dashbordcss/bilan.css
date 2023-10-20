@@ -1,0 +1,30 @@
+.bilan .ajouter-rechercher {
+    display:  flex;
+    justify-content: space-between;
+}
+.bilan .ajouter-rechercher .ajouter{
+    background-color: #4CAF50;
+    margin-top: 10px;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre portée */
+    transition: box-shadow 0.3s ease-in-out; /* Ajout d'une transition fluide */
+    margin-bottom: 6px;
+}
+
+
+.bilan .ajouter-rechercher input{
+    background-color: whitesmoke;
+    margin-left: 2px;
+    margin-top: 15px;
+    background-color: beige;
+    border-bottom: #4CAF50 solid 2px;
+    }
+    
+    .bilan .ajouter-rechercher input:focus{
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+    }
+    

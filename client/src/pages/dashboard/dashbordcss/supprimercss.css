@@ -1,0 +1,161 @@
+.sup-popup {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 100;
+}
+
+.sup-popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  position: relative;
+  top: 50px;
+
+}
+
+.sup-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+ top: 0px;
+ right: 0px;
+width: 40px;
+text-align: center
+
+}
+
+.sup-close:hover,
+.sup-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+background-color: red;
+ 
+
+}
+
+.supprimer {
+  display: flex;
+  justify-content: space-around;
+}
+.supprimer  div{
+  margin-top: 30px;
+font-size: 20px;
+}
+.supprimer .oui{
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre portée */
+  transition: box-shadow 0.3s ease-in-out; /* Ajout d'une transition fluide */
+}
+.supprimer .non {
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre portée */
+  transition: box-shadow 0.3s ease-in-out; /* Ajout d'une transition fluide */
+}
+
+.supprimer  div:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Modification de l'ombre portée au survol */
+}
+
+.sup-popup .valid {
+  font-size: 150px;
+  color: #4caf50;
+  transition: font-size 2s, color 2s;
+}
+
+@media (max-width: 800px){
+
+  .supprimer .non ,  .supprimer .oui{
+    padding: 4px 14px;
+    font-size: 14px;
+  }
+  .sup-popup  .valid{
+    font-size: 100px;
+    color: #4CAF50;
+  }
+}
+
+@media (max-width: 500px){
+
+
+  .sup-popup  .valid{
+    font-size: 70px;
+    color: #4CAF50;
+  }
+  .sup-close {
+    font-size: 20px;
+  }
+}
+
+/***/
+.animation {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100000;
+}
+
+ .load{
+  
+  display: flex;
+  justify-content: center;
+  margin: 30% auto;
+ }
+ .load div{
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation-name: up-ond;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ }
+ .load .two{
+  animation-delay: 0.3s;
+}
+.load .three{
+  
+  animation-delay: 0.6s;
+}
+ @keyframes up-ond{
+
+  /* ilaknt 0% hya lhala lihwa asln feh  mkynx lax nst3mlha*/
+  to {
+    opacity: 0.2;
+    transform: translateY(-20px);
+  }
+ }
+
+
+ @media (max-width: 800px){
+
+  .load{
+  
+    display: flex;
+    justify-content: center;
+    margin: 60% auto;
+   }
+}

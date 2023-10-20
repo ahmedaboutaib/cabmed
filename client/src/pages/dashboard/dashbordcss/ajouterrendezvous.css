@@ -1,0 +1,90 @@
+/*/none*/
+.ajouterrendezvous .popup {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  
+  .ajouterrendezvous  .popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+    top: 30px;
+  }
+  
+  .ajouterrendezvous  .close {
+    color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+ top: 30px !important;
+ right: 15px;
+width: 40px;
+text-align: center
+  }
+  
+  .ajouterrendezvous  .close:hover,
+  .ajouterrendezvous  .close:focus {
+    color: black;
+  text-decoration: none;
+  cursor: pointer;
+background-color: red;
+  }
+  .ajouterrendezvous-p{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  .ajouterrendezvous  label{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  .ajouterrendezvous  textarea,
+  .ajouterrendezvous input,select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .ajouterrendezvous .btn-v:disabled{
+    background-color: gray;
+    color: rgb(97, 90, 90);
+    opacity: 0.7;
+  
+  }
+  .ajouterrendezvous .obligatoir{
+    color: red;
+    font-size: 15px;
+    }
+  .ajouterrendezvous  button{
+
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .ajouterrendezvous .btn-v{
+    background-color: green;
+  }
+  .ajouterrendezvous .btn-a{
+    background-color: red;
+  }

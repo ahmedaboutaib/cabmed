@@ -1,0 +1,197 @@
+
+
+
+.ajouterOrd .popup {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  
+  .ajouterOrd .popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+ 
+    position: relative;
+    top: 30px;
+  }
+  
+  .ajouter_ord-form{
+    height: 300px;
+  }
+
+  .ord{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+
+  }
+  .ajouterOrd .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+   top: 30px;
+   right: 0px;
+  width: 40px;
+  text-align: center
+  }
+  
+  .ajouterOrd .close:hover,
+  .ajouterOrd .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  background-color: red;
+  }
+
+
+  .ajouterOrd label{
+    margin-left: 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
+  }
+  .ajouterOrd  textarea,
+  .ajouterOrd input,
+  .ajouterOrd select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+.ajouterOrd button{
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.ajouterOrd .mod{
+  font-size: 20px;
+}
+
+.ajouterOrd .btn-v:disabled{
+  background-color: gray;
+  color: rgb(97, 90, 90);
+  opacity: 0.7;
+
+}  
+.ajouterOrd .obligatoir{
+  color: red;
+  font-size: 15px;
+  }
+  .ajouterOrd .btn-v{
+    background-color: #4CAF50;
+   
+  }
+  .ajouterOrd .btn-n{
+    background-color: red;
+   
+  }
+  .ajouterOrd .btn-i{
+    background-color: blue;
+  }
+ 
+ .valider-annuler {
+  margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .ajouterOrd  .scrol{ overflow-x: scroll;
+  overflow-y: scroll;
+ width: 100%;
+max-height: 400px;
+}
+
+ 
+ .ajouterOrd .table {
+  overflow-x: scroll;
+  overflow-y: scroll;
+width: 100%;
+
+}
+.ajouterOrd table {
+
+    border-collapse: collapse;  
+    width: 100%; 
+  }
+  .ajouterOrd
+  th {
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(226 232 240) ;
+    border-spacing: 1px;
+  } 
+  .ajouterOrd td {
+    padding: 8px;
+    text-align: left;
+  }
+  .ajouterOrd  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } 
+  .ajouterOrd .supp{
+    font-size: 25px;
+    color:  red;
+}
+.ajouterOrd .div1 {
+  height: 100%;
+}
+
+.ajouterOrd .Ajouter-Med{
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.ajouterOrd .Ajouter-Med button {
+  padding: 6px 10px;
+  background-color: #4CAF50;
+}
+
+
+@media (max-width: 850px){
+
+  .ajouterOrd  .popup-content{
+width: 80%;
+  }
+}
+@media (max-width: 700px){
+  .ajouterOrd  .popup-content{
+    width: 90% !important;
+  }
+
+  .ajouterOrd   textarea,
+  .ajouterOrd  input{
+    padding: 5px !important;
+    margin-bottom: 10px !important;
+  }
+}
+@media (max-width: 500px){
+  .ajouterOrd  .popup-content{
+    width: 95% !important;
+  }
+
+  .ajouterOrd   textarea,
+  .ajouterOrd  input{
+    padding: 3px !important;
+    margin-bottom: 6px !important;
+  }
+}

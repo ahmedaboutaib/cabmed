@@ -1,0 +1,148 @@
+.ajouterType .popup {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 112;
+  }
+  
+  .ajouterType .popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+    top: 30px;
+  }
+  
+  .ajouterType  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+   top: 30px;
+   right: 0px;
+  width: 40px;
+  text-align: center
+  }
+  
+  .ajouterType .close:hover,
+  .ajouterType .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  background-color: red;
+  }
+  .ajouterType {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  .ajouterType label{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    width: 98%;
+  }
+  .ajouterType  textarea,
+  .ajouterType  select,
+  .ajouterType input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .ajouterType .div-button{
+    display: flex; 
+    justify-content:  flex-end;
+  }
+  .ajouterType .btn-v{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+   margin-right: 40px;
+  }
+ 
+ 
+ 
+
+  
+
+
+
+  .ajouterType .table-type {
+    margin-top: 10px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    max-height: 500px;
+  }
+  .ajouterType .table-type .table {
+    overflow-x: scroll;
+  width: 100%;
+
+  }
+  .ajouterType .table-type table{
+    width: 100%;
+  }
+    .ajouterType
+    th {
+      padding: 8px;
+  
+      background-color: rgb(226 232 240) ;
+      border-spacing: 1px;
+    } 
+    .ajouterType td {
+      padding: 8px;
+      text-align: left !important;
+    }
+    .ajouterType  tr:nth-child(even) {
+      background-color: #f2f2f2;
+    } 
+   
+  
+    .ajouterType .supp{
+      color: red;
+      font-size: 25px;
+    }
+
+
+    @media (max-width: 700px){
+      .ajouterType  .popup-content {
+        width: 90% !important;
+      }
+     
+      .ajouterType    textarea,
+      .ajouterType  input{
+        padding: 5px !important;
+        margin-bottom: 10px !important;
+      }
+    }
+    @media (max-width: 500px){
+      .ajouterType  .popup-content{
+        width: 95% !important;
+      }
+    
+      .ajouterType  textarea,
+      .ajouterType  input{
+        padding: 0px !important;
+        margin-bottom: 4px !important;
+      }
+    }

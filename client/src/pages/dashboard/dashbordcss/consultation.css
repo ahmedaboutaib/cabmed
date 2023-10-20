@@ -1,0 +1,115 @@
+
+.consultation-content {
+    width: 100%;
+    overflow-x: scroll;
+
+  }
+  .consultation-content .table {
+    overflow-x: scroll;
+  width: 100%;
+  }
+  .consultation-content table {
+      border-collapse: collapse;  
+      width: 100%; 
+    }
+    .consultation-content
+    th {
+      padding: 8px;
+      text-align: center;
+      background-color: rgb(226 232 240) ;
+      border-spacing: 1px;
+    } 
+    .consultation-content td {
+      padding: 8px;
+      text-align: left;
+    }
+    .consultation-content  tr:nth-child(even) {
+      background-color: #f2f2f2;
+    } 
+   
+  
+    .consultation-content .supp{
+      color: red;
+      font-size: 25px;
+    }
+    .consultation-content .ajouterbt {
+      color: blue;
+      font-size: 28px;
+  }
+  .consultation-content .modifier {
+      color: #4CAF50;
+      font-size: 25px;
+  }
+  .consultation-content .detail {
+    color: blue;
+    font-size: 25px;
+}
+
+
+
+
+
+/***/
+
+  .consultation-content .nouveau-rechercher{
+  /*display: flex;
+  justify-content: space-between;*/
+  width: 100%;
+}  .consultation-content .nouveau-rechercher .nouveau{
+margin-left: 10px;
+color: white;
+padding: 2.5px 5px;
+margin-bottom: 2px;
+background-color: #4CAF50;
+position: absolute;
+right: 0px  !important;
+top: 5px  ;
+
+}
+  .consultation-content .nouveau-rechercher .rechercher input{
+background-color: whitesmoke;
+margin-left: 2px;
+margin-top: 6px;
+margin-bottom: 2px;
+border: 2px solid #4CAF50;
+border-radius: 10px;
+
+}
+  .consultation-content .nouveau-rechercher .rechercher input:focus{
+outline: none;
+border-color: blue;
+box-shadow: 0 0 5px blue;
+}
+
+@media (max-width: 1099px){  .consultation-content .nouveau-rechercher .rechercher input {
+  width: 170px;
+ 
+}
+
+}
+
+
+@media (min-width: 1100px){  .consultation-content .nouveau-rechercher .rechercher input {
+  width: 220px;
+}
+
+}
+
+@media (max-width: 500px){  .consultation-content  .nouveau-rechercher .rechercher input {
+width: 120px ;
+}
+
+}
+
+
+@media (max-width: 500px){  .consultation-content  .nouveau-rechercher .rechercher input {
+width: 140px ;
+}
+}
+
+
+
+
+
+
+

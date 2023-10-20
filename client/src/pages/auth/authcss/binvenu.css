@@ -1,0 +1,28 @@
+.binven {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100vh;
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+.binven .container {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	margin: 100px auto;
+	max-width: 600px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.binven h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+.binven a {
+	color: #1E90FF;
+	text-decoration: none;
+	font-weight: bold;
+}

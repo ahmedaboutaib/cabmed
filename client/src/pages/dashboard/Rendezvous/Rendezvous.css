@@ -1,0 +1,233 @@
+.rendezvous{
+    width: 100%;
+  overflow-x: scroll;
+
+}
+
+
+
+
+
+ .table {
+  width: 100% ;
+  overflow-x: scroll;
+  }
+  .rendezvous table {
+      border-collapse: collapse;  
+      width: 100%; 
+    }
+    .rendezvous
+    th {
+      padding: 8px;
+      text-align: center;
+      background-color: rgb(226 232 240) ;
+      border-spacing: 1px;
+    } 
+    .rendezvous td {
+      padding: 8px;
+      text-align: left;
+    }
+    .patient tr:nth-child(even) {
+      background-color: #f2f2f2;
+    } 
+   
+  
+    .rendezvous .supp{
+      color: red;
+      font-size: 25px;
+    }
+    .rendezvous .ajouterbt {
+      color: blue;
+      font-size: 28px;
+  }
+  .rendezvous .modifier {
+      color: #4CAF50;
+      font-size: 25px;
+  }
+
+  .rendezvous .arriver {
+    background-color: #4CAF50;
+    padding: 4px 6px;
+    color:  white;
+    
+  }
+
+
+
+
+  .rendezvous .nouveau-rechercher{
+    /*display: flex;
+    justify-content: space-between;*/
+    width: 100%;
+}
+.rendezvous .nouveau-rechercher .nouveau{
+  margin-left: 10px;
+  color: white;
+  padding: 2.5px 5px;
+  margin-bottom: 2px;
+  background-color: #4CAF50;
+  position: absolute;
+  right: 0px  !important;
+  top: 5px  ;
+
+}
+.rendezvous .nouveau-rechercher .rechercher {
+display: flex;
+justify-content: flex-start;
+
+}
+.rendezvous .nouveau-rechercher .rechercher .rdv{
+  margin: 0px 15px;
+}
+.rendezvous .nouveau-rechercher .rechercher .select{
+width: 200px;
+background-color:  gainsboro;
+border-radius: 10px;
+position: relative;
+top: 5px;
+height: 25px;
+  }
+  .rendezvous .nouveau-rechercher .rechercher .date {
+    width: 120px;
+position: relative;
+top: 8px;
+  }
+  .rendezvous .nouveau-rechercher .rechercher label{
+    position: relative;
+    top: 8px;
+      }
+      .rendezvous .nouveau-rechercher .rechercher .radio{
+        width: 15px;
+        position: relative;
+        top: 10px;
+        margin-right: 5px;
+      }
+.rendezvous .nouveau-rechercher .rechercher .rh{
+  background-color: whitesmoke;
+  margin-left: 2px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+border: 2px solid #4CAF50;
+border-radius: 10px;
+
+}
+
+.rendezvous .nouveau-rechercher .rechercher .rh:focus{
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px blue;
+}
+.option{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  color: black;
+ 
+}
+@media (max-width: 1099px){
+  .rendezvous .nouveau-rechercher .rechercher input {
+    width: 170px;
+   
+  }
+  .rendezvous .nouveau-rechercher .rechercher {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 35px;
+    }
+    .rendezvous .nouveau-rechercher .rechercher .rh{
+      position: relative;
+    top: 115px;
+    }
+    .rendezvous .nouveau-rechercher .nouveau{
+      top: 90px;
+    }
+
+    .rendezvous .nouveau-rechercher .rechercher .select{
+      width: 200px;
+      background-color:  gainsboro;
+      border-radius: 10px;
+      position: relative;
+      top: 2px;
+        }
+        .rendezvous .nouveau-rechercher .rechercher .radio{
+          width: 15px;
+          position: relative;
+          top: 2px;
+        }
+        .rendezvous .nouveau-rechercher .rechercher .lab{
+          position: relative;
+          top:  0px !important;
+        }
+            
+}
+
+  
+@media (min-width: 1100px){
+  .rendezvous .nouveau-rechercher .rechercher input {
+    width: 220px;
+  }
+ 
+}
+
+@media (max-width: 500px){
+  .rendezvous .nouveau-rechercher .rechercher input {
+  width: 120px ;
+}
+.rendezvous .nouveau-rechercher .rechercher {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 25px;
+  }
+  .rendezvous .nouveau-rechercher .rechercher .rh{
+    position: relative;
+  top: 102px;
+  }
+  .rendezvous .nouveau-rechercher .rechercher .r{
+    position: relative;
+  top: 102px;
+  }
+  .rendezvous .nouveau-rechercher .nouveau{
+    top: 80px;
+  }
+
+}
+
+  
+@media (max-width: 500px){
+  .rendezvous  .nouveau-rechercher .rechercher input {
+  width: 140px ;
+}
+}
+  
+  .rendezvous .patient-cab{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+
+
+  @media (max-width: 1099px){
+    .rendezvous .rechercher input {
+      width: 170px;
+     
+    }
+  }
+    
+  @media (min-width: 1100px){
+  
+    .rendezvous .rechercher input {
+      width: 220px;
+    }
+  
+  }
+  @media (max-width: 500px){
+    .rendezvous .rechercher input {
+    width: 140px ;
+  }
+  }

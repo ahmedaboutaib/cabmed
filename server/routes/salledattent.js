@@ -1,0 +1,10 @@
+var express = require("express");
+var router = express.Router();
+var SalleController = require("../controllers/salledattentController");
+const AuthenticateJWT = require("../middleware/authenticateJWT");
+router.post("/", AuthenticateJWT, SalleController.createOne);
+router.get("/:CabinetId", AuthenticateJWT, SalleController.getAllCabId);
+router.get("/", AuthenticateJWT, SalleController.getAll);
+router.delete("/:id", AuthenticateJWT, SalleController.deleteOne);
+router.put("/:id", AuthenticateJWT, SalleController.updateOne);
+module.exports = router;

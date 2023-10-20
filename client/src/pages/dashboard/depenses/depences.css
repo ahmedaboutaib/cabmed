@@ -1,0 +1,253 @@
+
+.Depenses {
+    width: 100%;
+    overflow-x: scroll;
+   
+  }
+  .Depenses .table {
+    overflow-x: scroll;
+  width: 100%;
+  }
+  
+  .Depenses table {
+      border-collapse: collapse;  
+      width: 100%; 
+    }
+    .Depenses
+    th {
+      padding: 8px;
+      text-align: center;
+      background-color: rgb(226 232 240) ;
+      border-spacing: 1px;
+    } 
+    .Depensest td {
+      padding: 8px;
+      text-align: left;
+    }
+    .Depenses tr:nth-child(even) {
+      background-color: #f2f2f2;
+    } 
+   
+  
+    .Depenses .supp{
+      color: red;
+      font-size: 18px;
+    }
+    .Depenses .ajouterbt {
+      color: white;
+      font-size: 14px;
+  }
+  .Depenses .ajouterSalle{
+    color: goldenrod;
+  font-size: 18px;
+  }
+  .Depenses .modifier {
+      color: #4CAF50;
+      font-size: 18px;
+  }
+  
+
+
+  .Depenses .nouveau-rechercher{
+    /*display: flex;
+    justify-content: space-between;*/
+    width: 100%;
+}
+.Depenses .nouveau-rechercher .nouveau{
+  margin-left: 10px;
+  color: white;
+  padding: 2.5px 5px;
+  margin-bottom: 2px;
+  background-color: #4CAF50;
+  position: absolute;
+  right: 0px  !important;
+  top: 5px  ;
+
+}
+   .Depenses .nouveau-rechercher .rechercher input{
+  background-color: whitesmoke;
+  margin-left: 2px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+border: 2px solid #4CAF50;
+border-radius: 10px;
+
+}
+
+.Depenses .nouveau-rechercher .rechercher input:focus{
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px blue;
+}
+
+@media (max-width: 1099px){
+  .Depenses .nouveau-rechercher .rechercher input {
+    width: 170px;
+   
+  }
+
+}
+
+  
+@media (min-width: 1100px){
+  .Depenses .nouveau-rechercher .rechercher input {
+    width: 220px;
+  }
+
+}
+
+@media (max-width: 500px){
+  .Depenses  .nouveau-rechercher .rechercher input {
+  width: 120px ;
+}
+
+}
+
+  
+@media (max-width: 500px){
+  .Depenses  .nouveau-rechercher .rechercher input {
+  width: 140px ;
+}
+}
+
+
+
+
+
+  
+/*ajouter depence*/
+  .AjouteDepences  .popup {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  
+  .AjouteDepences  .popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    position: relative;
+    top: 30px;
+  }
+  
+  .AjouteDepences  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+   top: 30px;
+   right: 0px;
+  width: 40px;
+  text-align: center
+  }
+  
+  .AjouteDepences  .close:hover,
+  .AjouteDepences  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  background-color: red;
+  }
+  .AjouteDepences    .Ajoute-Depences {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  .AjouteDepences   .Ajoute-Depences label{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  .AjouteDepences   .Ajoute-Depences  input,   .AjouteDepences    .Ajoute-Depences  select ,.Ajoute-Depences textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .AjouteDepences    .Ajoute-Depences  .submit:disabled{
+    background-color: gray;
+    color: rgb(97, 90, 90);
+    opacity: 0.7;
+  
+  }
+
+
+  .AjouteDepences    .Ajoute-Depences  .submit,  .AjouteDepences    .Ajoute-Depences  .annule {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin: 6px 10px;
+  }
+  .AjouteDepences    .Ajoute-Depences  .submit{
+  background-color: #4CAF50;}
+  .AjouteDepences   .Ajoute-Depences  .annule{
+    background-color: red;
+  }
+
+  
+  .AjouteDepences    .Ajoute-Depences .obligatoir{
+  color: red;
+  font-size: 15px;
+}
+.AjouteDepences    .Ajoute-Depences .div-button {
+ display: flex;
+ justify-content: flex-end; 
+}
+
+
+@media (max-width: 800px){
+
+  .AjouteDepences  .popup-content {
+ 
+    width: 80%;
+  }
+  .AjouteDepences   .Ajoute-Depences  input,   .AjouteDepences    .Ajoute-Depences  select ,.Ajoute-Depences textarea {
+    width: 100%;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 500px){
+  .AjouteDepences  .popup-content {
+   
+    width: 90%;
+  }
+
+  .AjouteDepences    .Ajoute-Depences .div-button {
+    display: block;
+
+   }
+   .AjouteDepences    .Ajoute-Depences .div-button  button {
+    width: 100%;
+    padding: 4px;
+    margin: 5px 0px;
+   }
+   .AjouteDepences   .Ajoute-Depences  input,   .AjouteDepences    .Ajoute-Depences  select ,.Ajoute-Depences textarea {
+    width: 100%;
+    padding: 2px;
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+}

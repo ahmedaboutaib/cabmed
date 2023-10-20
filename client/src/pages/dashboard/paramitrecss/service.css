@@ -1,0 +1,297 @@
+
+
+
+.service {
+  width: 100%;
+  overflow-x: scroll;
+
+}
+.service .table {
+  overflow-x: scroll;
+width: 100%;
+}
+.service table {
+    border-collapse: collapse;  
+    width: 100%; 
+  }
+  .service
+  th {
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(226 232 240) ;
+    border-spacing: 1px;
+  } 
+  .service td {
+    padding: 8px;
+    text-align: left;
+  }
+  .service  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } 
+ 
+
+  .service .supp{
+    color: red;
+    font-size: 25px;
+  }
+  .service .ajouterbt {
+    color: blue;
+    font-size: 28px;
+}
+.service .modifier {
+    color: #4CAF50;
+    font-size: 25px;
+}
+.service .detail {
+  color: blue;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service .nouveau-rechercher{
+  /*display: flex;
+  justify-content: space-between;*/
+  width: 100%;
+}
+.service .nouveau-rechercher .nouveau{
+margin-left: 10px;
+color: white;
+padding: 2.5px 5px;
+margin-bottom: 2px;
+background-color: #4CAF50;
+position: absolute;
+right: 0px  !important;
+top: 5px  ;
+
+}
+ .service .nouveau-rechercher .rechercher input{
+background-color: whitesmoke;
+margin-left: 2px;
+margin-top: 6px;
+margin-bottom: 2px;
+border: 2px solid #4CAF50;
+border-radius: 10px;
+
+}
+
+.service .nouveau-rechercher .rechercher input:focus{
+outline: none;
+border-color: blue;
+box-shadow: 0 0 5px blue;
+}
+
+@media (max-width: 1099px){
+.service .nouveau-rechercher .rechercher input {
+  width: 170px;
+ 
+}
+
+}
+
+
+@media (min-width: 1100px){
+.service .nouveau-rechercher .rechercher input {
+  width: 220px;
+}
+
+}
+
+@media (max-width: 500px){
+.service  .nouveau-rechercher .rechercher input {
+width: 120px ;
+}
+
+}
+
+
+@media (max-width: 500px){
+.service  .nouveau-rechercher .rechercher input {
+width: 140px ;
+}
+}
+
+
+
+
+
+
+
+/* sr*/
+.supp-button .supp{
+    color:  red;
+    font-size: 25px;
+}
+.mod-button .modifier{
+    color: green;
+    font-size: 24px;
+}
+  /*
+ css  ajouter service
+  */
+  
+
+
+
+
+
+
+  .AjouterSrv .popup {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  
+  .AjouterSrv   .popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    position: relative;
+    top: 30px;
+  }
+  
+  .AjouterSrv .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+   top: 30px;
+   right: 0px;
+  width: 40px;
+  text-align: center
+  }
+  
+  .AjouterSrv .close:hover,
+  .AjouterSrv  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  background-color: red;
+  }
+  .AjouterSrv  {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  .AjouterSrv label{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  .AjouterSrv   textarea,
+  .AjouterSrv input,
+  .AjouterSrv select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .AjouterSrv .btn-v{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+   margin-right: 40px;
+  }
+  .AjouterSrv .btn-n{
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+ 
+ 
+
+  .AjouterSrv .div-button {
+    display:flex;
+  justify-content: space-between;
+  }
+
+  .AjouterSrv  .serv{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+
+
+
+
+  @media (max-width: 850px){
+
+    .AjouterSrv .popup-content {
+      width: 80% !important;
+    }
+
+    .AjouterSrv textarea,
+
+    .AjouterSrv input,
+  
+    .AjouterSrv select{
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+  }
+  @media (max-width: 700px){
+
+    .AjouterSrv .popup-content {
+      width: 90% !important;
+    }
+
+    .AjouterSrv .div-button{
+      display: block;
+    }
+
+    .AjouterSrv .div-button button{
+      width: 100% !important;
+      padding: 3px;
+      margin:  4px  4px;
+
+    }
+
+
+    .AjouterSrv  textarea,
+
+    .AjouterSrv  input,
+
+    .AjouterSrv  select{
+      padding: 5px !important;
+      margin-bottom: 10px !important;
+    }
+  }
