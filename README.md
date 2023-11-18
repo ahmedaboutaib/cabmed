@@ -1,89 +1,84 @@
-
-# CabMed - Plateforme de Gestion de Cabinet Médical
+# CabMed - Medical Cabinet Management Platform
 
 ## Introduction
-CabMed est une plateforme complète de gestion de cabinet médical conçue pour faciliter la gestion quotidienne des rendez-vous, des patients, des paiements et des dossiers médicaux. Cette application est destinée à être utilisée par trois types d'utilisateurs : l'administrateur, le médecin, et le secrétaire médical.
+CabMed is a comprehensive medical cabinet management platform designed to facilitate the daily management of appointments, patients, payments, and medical records. This application is intended to be used by three types of users: the administrator, the physician, and the medical secretary.
 
-## Comptes Utilisateurs
+## User Accounts
 1. **Admin:**
-   - Gère les comptes utilisateurs et les autorisations d'accès.
-   - Surveille l'activité globale de la plateforme.
-   - Accès aux fonctionnalités administratives avancées.
+   - Manages user accounts and access permissions.
+   - Monitors overall platform activity.
+   - Access to advanced administrative features.
 
-2. **Médecin:**
-   - Consulte le calendrier des rendez-vous.
-   - Accède aux dossiers médicaux des patients.
-   - Génère des certificats, ordonnances et rapports de consultation.
+2. **Physician:**
+   - Views the appointment calendar.
+   - Accesses patients' medical records.
+   - Generates certificates, prescriptions, and consultation reports.
 
-3. **Secrétaire Médical:**
-   - Planifie les rendez-vous pour les patients.
-   - Gère les listes d'attente et les disponibilités des médecins.
-   - Gère les informations administratives des patients.
+3. **Medical Secretary:**
+   - Schedules appointments for patients.
+   - Manages waiting lists and physicians' availability.
+   - Manages patients' administrative information.
 
-## Technologies Utilisées
+## Technologies Used
 - **Frontend: ReactJS**
-  - Interface utilisateur réactive et conviviale.
-  - Gestion dynamique des données pour une expérience utilisateur fluide.
+  - Responsive and user-friendly interface.
+  - Dynamic data handling for a seamless user experience.
 
 - **Backend: ExpressJS (Node.js)**
-  - Gestion robuste des requêtes HTTP.
-  - Communication efficace avec la base de données.
+  - Robust handling of HTTP requests.
+  - Efficient communication with the database.
 
 - **ORM: Sequelize**
-  - Abstraction de la base de données relationnelle.
-  - Facilité d'utilisation pour les opérations CRUD (Create, Read, Update, Delete).
+  - Abstraction of the relational database.
+  - Ease of use for CRUD operations (Create, Read, Update, Delete).
 
-## Fonctionnalités Principales
-1. **Gestion des Rendez-vous:**
-   - Planification intuitive des rendez-vous pour les médecins.
-   - Affichage clair des créneaux horaires disponibles.
+## Key Features
+1. **Appointment Management:**
+   - Intuitive scheduling of appointments for physicians.
+   - Clear display of available time slots.
 
-2. **Gestion des Patients:**
-   - Création et mise à jour des dossiers médicaux des patients.
-   - Suivi des antécédents médicaux et des informations administratives.
+2. **Patient Management:**
+   - Creation and updating of patients' medical records.
+   - Tracking of medical history and administrative information.
 
-3. **Gestion des Paiements:**
-   - Enregistrement des paiements des patients pour les consultations et les services médicaux.
+3. **Payment Management:**
+   - Recording patient payments for consultations and medical services.
 
-4. **Certificats et Ordonnances:**
-   - Génération et gestion des certificats médicaux et des ordonnances.
+4. **Certificates and Prescriptions:**
+   - Generation and management of medical certificates and prescriptions.
 
-5. **Liste d'Attente:**
-   - Organisation efficace des patients en attente de rendez-vous.
+5. **Waiting List:**
+   - Efficient organization of patients awaiting appointments.
 
-## Comment Utiliser l'Application
-1. Clonez le dépôt sur votre machine locale.
+## How to Use the Application
+1. Clone the repository to your local machine.
    ```bash
    git clone https://github.com/ahmedaboutaib/cabmed.git
    ```
 
-2. Installez les dépendances du frontend et du backend.
+2. Install dependencies for the frontend and backend.
    ```bash
-   cd cabmed/frontend
+   cd cabmed/client
    npm install
 
-   cd ../backend
+   cd ../server
    npm install
    ```
 
-3. Configurez la base de données dans le fichier `config/database.js` en utilisant Sequelize.
+3. Configure the database in the `config/database.js` file using Sequelize.
 
-4. Lancez l'application.
+4. Launch the application.
    ```bash
-   cd ../frontend
+   cd ../client
    npm run dev
 
-   cd ../backend
+   cd ../server
     npm run watch
    ```
 
-5. Accédez à l'application dans votre navigateur à l'adresse [http://localhost:3000](http://localhost:3000).
+5. Access the application in your browser at [http://localhost:3000](http://localhost:3000).
 
 ## Contributions
-Les contributions à l'amélioration de CabMed sont les bienvenues. Créez une issue pour discuter des nouvelles fonctionnalités ou des corrections de bugs, et soumettez des pull requests conformes aux directives du projet.
+Contributions to the improvement of CabMed are welcome. Create an issue to discuss new features or bug fixes, and submit pull requests following the project's guidelines.
 
-Nous espérons que CabMed facilite la gestion de votre cabinet médical et améliore l'efficacité de votre pratique médicale.
-
-
-
-
+We hope that CabMed facilitates the management of your medical cabinet and enhances the efficiency of your medical practice.
