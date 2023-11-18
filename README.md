@@ -54,7 +54,7 @@ CabMed est une plateforme complète de gestion de cabinet médical conçue pour 
 ## Comment Utiliser l'Application
 1. Clonez le dépôt sur votre machine locale.
    ```bash
-   git clone https://github.com/votre-utilisateur/cabmed.git
+   git clone https://github.com/ahmedaboutaib/cabmed.git
    ```
 
 2. Installez les dépendances du frontend et du backend.
